@@ -9,9 +9,14 @@ export const ColorModeProvider = ({ children }) => {
 
     const colorMode = useMemo(() => ({
         toggleColorMode: () => {
-            setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+            setMode((prevMode) => {
+                const newMode = prevMode === 'light' ? 'dark' : 'light';
+                console.log('Toggling mode:', prevMode, 'to', newMode); // This will log the mode change
+                return newMode;
+            });
         }
     }), []);
+    
 
     const theme = useMemo(
         () =>

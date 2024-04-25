@@ -5,13 +5,14 @@ import Brightness7Icon from '@mui/icons-material/Brightness7';  // Icon for ligh
 import { useColorMode } from './theme-context';  // Import the context hook
 
 function ToggleColorMode() {
-    const { toggleColorMode } = useColorMode();
-
+    const context = useColorMode();
+    console.log(context);  // This should log { toggleColorMode: [Function: toggleColorMode] }
     return (
-        <IconButton onClick={toggleColorMode} color="inherit">
-            <Brightness4Icon />
+        <IconButton onClick={context.toggleColorMode} color="inherit">
+            {context.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
         </IconButton>
     );
 }
+
 
 export default ToggleColorMode;
