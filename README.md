@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# MyQuizApp - React Web App for Quizes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created with [Create React App](https://github.com/facebook/create-react-app), Material UI and @matejmazur/react-katex.
 
 ## Available Scripts
 
