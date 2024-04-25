@@ -1,0 +1,26 @@
+.question-container {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.question-title {
+  text-align: left;
+  margin-bottom: 15px;
+  color: #333 !important;
+  font-size: 1.2rem !important;
+}
+
+.option {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #F0F3FF;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #CDFADB;
+}

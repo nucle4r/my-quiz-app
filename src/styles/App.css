@@ -1,0 +1,53 @@
+.app-container {
+  flex-direction: column;
+  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+  overflow: hidden;
+}
+
+.content-box {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.app-title {
+  color: #fff;
+  font-size: 3rem !important;
+  font-weight: 800 !important;
+  text-align: center;
+}
+
+.sub-heading {
+  color: #000;
+  font-size: 1.5rem !important;
+  margin-bottom: 15px !important;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  width: 100%;
+}
+
+
+ @media (max-width: 576px) {
+
+  .content-box {
+    padding: 10px;
+  }
+
+  .app-title {
+    font-size: 2rem !important;
+  }
+
+  .sub-heading {
+    font-size: 1rem !important;
+    margin-bottom: 10px !important;
+  }
+
+}

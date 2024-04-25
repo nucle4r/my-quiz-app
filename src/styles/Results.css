@@ -1,0 +1,55 @@
+.results-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust this value based on the actual height of your AppBar */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.score {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.percentage-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  margin: 20px auto;
+  background-color: #f0f0f0;
+  color: #fff;
+}
+
+.result-details {
+  width: 90%;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffdffc;
+  border-radius: 25px;
+  font-size: 1.1rem;
+}
+
+.correct-answer {
+  color: green;
+}
+
+.wrong-answer {
+  color: red;
+}
+
+.highlight {
+  color: black;
+}
