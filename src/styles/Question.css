@@ -15,12 +15,12 @@
 .option {
   margin: 10px 0;
   padding: 10px;
-  background-color: #F0F3FF;
-  border: 1px solid #DDDDDD;
+  background-color: #f0f3ff;
+  border: 1px solid #dddddd;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .selected {
-  background-color: #CDFADB;
+  background-color: #cdfadb;
 }

@@ -38,7 +38,9 @@ function App() {
         }}
       >
         {!quizStarted && (
-          <Typography className="app-title">Welcome to the MyQuizApp</Typography>
+          <Typography className="app-title">
+            Welcome to the MyQuizApp
+          </Typography>
         )}
         <Container
           maxWidth="sm"

@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@mui/material";
+import MathTextRenderer from "./MathTextRenderer"; // Import the MathTextRenderer component
 import "../styles/Results.css";
 
 function Results({ userAnswers, questions, handleBack }) {
@@ -38,9 +39,7 @@ function Results({ userAnswers, questions, handleBack }) {
       {questions.map((question, index) => (
         <div key={index} className="result-details">
           <p>
-            <strong>
-              Q{index + 1}: {question.Question}
-            </strong>
+            <strong>Q{index + 1}: <MathTextRenderer text={question.Question} /></strong>
           </p>
           <p
             className={
@@ -52,13 +51,11 @@ function Results({ userAnswers, questions, handleBack }) {
             }
           >
             <strong>Your answer:</strong>{" "}
-            {userAnswers[index] !== null
-              ? question.Options[userAnswers[index]]
-              : "No Answer"}
+            <MathTextRenderer text={userAnswers[index] !== null ? question.Options[userAnswers[index]] : "No Answer"} />
           </p>
           <p className="highlight">
             <strong>Correct answer:</strong>{" "}
-            {question.Options[question.CorrectOption]}
+            <MathTextRenderer text={question.Options[question.CorrectOption]} />
           </p>
         </div>
       ))}
